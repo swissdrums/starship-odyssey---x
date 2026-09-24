@@ -7,13 +7,17 @@ let toggleInfiniteHP = false
 let toggleDoubleLeakDamage = false
 let buttonPatternLog = ""
 let mainGameActive = true
+let bulkheadExploded = false
+let masterKeycardRepaired = false
+let messHallRationsConsumed = false
 let commandList = [
     "MOVE NORTH", "MOVE SOUTH", "MOVE EAST", "MOVE WEST",
     "CLIMB UP", "CLIMB DOWN", "GATHER ITEMS", "BAIT MONSTER",
     "HACK NETWORK", "FEED HYDRA", "STEAL EGG", "APPLY CHEMICAL",
     "HARVEST PLANT", "USE CRAFTING", "REPAIR ENGINE", "OVERCHARGE CORE",
     "CHARGE CORE", "TRANSMIT SOS", "VIEW STATUS", "SEARCH VENTS",
-    "EXAMINE DUNES", "EXAMINE ROCKS", "ADMIN COMMANDS", "EXIT ADMIN MODE" // 👑 ADDED BOTH HERE!
+    "EXAMINE DUNES", "EXAMINE ROCKS", "ADMIN COMMANDS", "EXIT ADMIN MODE",
+     "CRAFT VOLATILE CHARGE", "CRAFT VISOR HACK", "REPAIR KEYCARD", "CONSUME NUTRIENTS"
 ]
 let bannerBox = textsprite.create("STARSHIP ODYSSEY-X", 0, 1)
 bannerBox.setBorder(1, 2)
