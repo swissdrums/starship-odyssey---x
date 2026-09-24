@@ -723,6 +723,11 @@ function playTurn(action: string) {
         } else if (currentRoom == "comms_array") {
             currentRoom = "satellite_dish";
             describeRoom(currentRoom);
+
+        }else if (currentRoom == "maintenance_locker") {
+                currentRoom = "sub_level_hub"
+                describeRoom(currentRoom)
+
         } else {
             refundAir();
             showMsg("A mountain range or solid metal plating blocks movement that way.");
@@ -766,6 +771,19 @@ function playTurn(action: string) {
         } else if (currentRoom == "satellite_dish") {
             currentRoom = "comms_array";
             describeRoom(currentRoom);
+
+        }else if (currentRoom == "sub_level_hub") {
+            currentRoom = "maintenance_locker"
+            describeRoom(currentRoom)
+    
+        }else if (currentRoom == "crew_mess_hall") {
+            currentRoom = "crew_quarters"
+             describeRoom(currentRoom)
+        
+        }else if (currentRoom == "captains_deck") {
+            currentRoom = "crew_mess_hall"
+            describeRoom(currentRoom)
+
         } else {
             refundAir();
             showMsg("There are no structural pathways leading south from here.");
